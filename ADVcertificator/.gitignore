@@ -7,8 +7,8 @@
 *.o
 *.so
 
-# XCode
-
+# XCode #
+#########
 *.xcuserstate
 xcuserdata
 build
@@ -43,3 +43,12 @@ build
 ._*
 .Spotlight-V100
 .Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+profile
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
