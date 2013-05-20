@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653E494D16A58DB10076B5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653E494C16A58DB10076B5BA /* Foundation.framework */; };
+		653E495416A58DB10076B5BA /* ADVCertificator.m in Sources */ = {isa = PBXBuildFile; fileRef = 653E495316A58DB10076B5BA /* ADVCertificator.m */; };
+		653E495C16A58DB10076B5BA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653E495B16A58DB10076B5BA /* SenTestingKit.framework */; };
+		653E495E16A58DB10076B5BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653E495D16A58DB10076B5BA /* UIKit.framework */; };
+		653E495F16A58DB10076B5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653E494C16A58DB10076B5BA /* Foundation.framework */; };
+		653E496216A58DB10076B5BA /* libADVcertificator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 653E494916A58DB10076B5BA /* libADVcertificator.a */; };
+		653E496816A58DB10076B5BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 653E496616A58DB10076B5BA /* InfoPlist.strings */; };
+		653E496B16A58DB10076B5BA /* ADVCertificatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 653E496A16A58DB10076B5BA /* ADVCertificatorTests.m */; };
+		653E497616A5902C0076B5BA /* ADVUrlProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 653E497516A5902C0076B5BA /* ADVUrlProtocol.m */; };
+		653E498316A598D70076B5BA /* ADVUrlProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 653E497516A5902C0076B5BA /* ADVUrlProtocol.m */; };
+		65433C7916B03C5A00AD9727 /* ADVASN1.m in Sources */ = {isa = PBXBuildFile; fileRef = 65433C6E16B03C5A00AD9727 /* ADVASN1.m */; };
+		65433C7A16B03C5A00AD9727 /* ADVNSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 65433C7016B03C5A00AD9727 /* ADVNSData+Base64.m */; };
+		65433C7B16B03C5A00AD9727 /* ADVNSFileHandleExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 65433C7216B03C5A00AD9727 /* ADVNSFileHandleExtension.m */; };
+		65433C7C16B03C5A00AD9727 /* ADVOid.m in Sources */ = {isa = PBXBuildFile; fileRef = 65433C7416B03C5A00AD9727 /* ADVOid.m */; };
+		65433C7D16B03C5A00AD9727 /* ADVX500DistinguishedName.m in Sources */ = {isa = PBXBuildFile; fileRef = 65433C7616B03C5A00AD9727 /* ADVX500DistinguishedName.m */; };
+		65433C7E16B03C5A00AD9727 /* ADVX509Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65433C7816B03C5A00AD9727 /* ADVX509Certificate.m */; };
+		655E4D0816A6FFA100A001CB /* ADVCertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 655E4D0716A6FFA100A001CB /* ADVCertUtil.m */; };
+		65947E9716B80893008E0D6E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65947E9616B80893008E0D6E /* Security.framework */; };
+		65947E9A16B8189E008E0D6E /* ADVASN1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65947E9916B8189E008E0D6E /* ADVASN1Tests.m */; };
+		65B56F9816C3C4790007BD67 /* ADVNSDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B56F9716C3C4790007BD67 /* ADVNSDataExtension.m */; };
+		BE14EBBF1741357D00A0AB7C /* ADVX509Certificate.h in Headers */ = {isa = PBXBuildFile; fileRef = 65433C7716B03C5A00AD9727 /* ADVX509Certificate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE14EBC0174135BA00A0AB7C /* ADVOid.h in Headers */ = {isa = PBXBuildFile; fileRef = 65433C7316B03C5A00AD9727 /* ADVOid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE14EBC117413C8E00A0AB7C /* ADVX500DistinguishedName.h in Headers */ = {isa = PBXBuildFile; fileRef = 65433C7516B03C5A00AD9727 /* ADVX500DistinguishedName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE14EBC217413CA900A0AB7C /* ADVASN1.h in Headers */ = {isa = PBXBuildFile; fileRef = 65433C6D16B03C5A00AD9727 /* ADVASN1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE278334174132870013C83D /* ADVCertificator.h in Headers */ = {isa = PBXBuildFile; fileRef = 653E495116A58DB10076B5BA /* ADVCertificator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		653E496016A58DB10076B5BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 653E494016A58DB10076B5BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 653E494816A58DB10076B5BA;
+			remoteInfo = ADVCertLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		653E494916A58DB10076B5BA /* libADVcertificator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADVcertificator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		653E494C16A58DB10076B5BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		653E495016A58DB10076B5BA /* ADVcertificator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADVcertificator-Prefix.pch"; sourceTree = "<group>"; };
+		653E495116A58DB10076B5BA /* ADVCertificator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVCertificator.h; sourceTree = "<group>"; };
+		653E495316A58DB10076B5BA /* ADVCertificator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVCertificator.m; sourceTree = "<group>"; };
+		653E495A16A58DB10076B5BA /* ADVcertificatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADVcertificatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		653E495B16A58DB10076B5BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		653E495D16A58DB10076B5BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		653E496516A58DB10076B5BA /* ADVcertificatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADVcertificatorTests-Info.plist"; sourceTree = "<group>"; };
+		653E496716A58DB10076B5BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		653E496916A58DB10076B5BA /* ADVCertificatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVCertificatorTests.h; sourceTree = "<group>"; };
+		653E496A16A58DB10076B5BA /* ADVCertificatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVCertificatorTests.m; sourceTree = "<group>"; };
+		653E497416A5902C0076B5BA /* ADVUrlProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVUrlProtocol.h; sourceTree = "<group>"; };
+		653E497516A5902C0076B5BA /* ADVUrlProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVUrlProtocol.m; sourceTree = "<group>"; };
+		65433C6D16B03C5A00AD9727 /* ADVASN1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ADVASN1.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		65433C6E16B03C5A00AD9727 /* ADVASN1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ADVASN1.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		65433C6F16B03C5A00AD9727 /* ADVNSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADVNSData+Base64.h"; sourceTree = "<group>"; };
+		65433C7016B03C5A00AD9727 /* ADVNSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADVNSData+Base64.m"; sourceTree = "<group>"; };
+		65433C7116B03C5A00AD9727 /* ADVNSFileHandleExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVNSFileHandleExtension.h; sourceTree = "<group>"; };
+		65433C7216B03C5A00AD9727 /* ADVNSFileHandleExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVNSFileHandleExtension.m; sourceTree = "<group>"; };
+		65433C7316B03C5A00AD9727 /* ADVOid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVOid.h; sourceTree = "<group>"; };
+		65433C7416B03C5A00AD9727 /* ADVOid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVOid.m; sourceTree = "<group>"; };
+		65433C7516B03C5A00AD9727 /* ADVX500DistinguishedName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVX500DistinguishedName.h; sourceTree = "<group>"; };
+		65433C7616B03C5A00AD9727 /* ADVX500DistinguishedName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVX500DistinguishedName.m; sourceTree = "<group>"; };
+		65433C7716B03C5A00AD9727 /* ADVX509Certificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVX509Certificate.h; sourceTree = "<group>"; };
+		65433C7816B03C5A00AD9727 /* ADVX509Certificate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVX509Certificate.m; sourceTree = "<group>"; };
+		65433C8D16B0442E00AD9727 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		65433C9016B0442E00AD9727 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		65433C9116B0442E00AD9727 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		65433C9216B0442E00AD9727 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65433CD916B0489800AD9727 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		65433CDC16B049E000AD9727 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		655E4D0616A6FFA100A001CB /* ADVCertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVCertUtil.h; sourceTree = "<group>"; };
+		655E4D0716A6FFA100A001CB /* ADVCertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVCertUtil.m; sourceTree = "<group>"; };
+		65947E9616B80893008E0D6E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		65947E9816B8189E008E0D6E /* ADVASN1Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVASN1Tests.h; sourceTree = "<group>"; };
+		65947E9916B8189E008E0D6E /* ADVASN1Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVASN1Tests.m; sourceTree = "<group>"; };
+		65B56F9616C3C4790007BD67 /* ADVNSDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVNSDataExtension.h; sourceTree = "<group>"; };
+		65B56F9716C3C4790007BD67 /* ADVNSDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVNSDataExtension.m; sourceTree = "<group>"; };
+		65F588E216EF2AC00029859C /* ADVLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVLog.h; sourceTree = "<group>"; };
+		BE27832F1741239E0013C83D /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		BE278330174127270013C83D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		653E494616A58DB10076B5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653E494D16A58DB10076B5BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653E495616A58DB10076B5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65947E9716B80893008E0D6E /* Security.framework in Frameworks */,
+				653E495C16A58DB10076B5BA /* SenTestingKit.framework in Frameworks */,
+				653E495E16A58DB10076B5BA /* UIKit.framework in Frameworks */,
+				653E495F16A58DB10076B5BA /* Foundation.framework in Frameworks */,
+				653E496216A58DB10076B5BA /* libADVcertificator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		653E493E16A58DB10076B5BA = {
+			isa = PBXGroup;
+			children = (
+				BE278330174127270013C83D /* README.md */,
+				BE27832F1741239E0013C83D /* COPYING */,
+				653E494E16A58DB10076B5BA /* ADVcertificator */,
+				653E496316A58DB10076B5BA /* ADVcertificatorTests */,
+				653E494B16A58DB10076B5BA /* Frameworks */,
+				653E494A16A58DB10076B5BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		653E494A16A58DB10076B5BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				653E494916A58DB10076B5BA /* libADVcertificator.a */,
+				653E495A16A58DB10076B5BA /* ADVcertificatorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653E494B16A58DB10076B5BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65947E9616B80893008E0D6E /* Security.framework */,
+				65433CDC16B049E000AD9727 /* Foundation.framework */,
+				65433CD916B0489800AD9727 /* Security.framework */,
+				653E494C16A58DB10076B5BA /* Foundation.framework */,
+				653E495B16A58DB10076B5BA /* SenTestingKit.framework */,
+				653E495D16A58DB10076B5BA /* UIKit.framework */,
+				65433C8D16B0442E00AD9727 /* Cocoa.framework */,
+				65433C8F16B0442E00AD9727 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		653E494E16A58DB10076B5BA /* ADVcertificator */ = {
+			isa = PBXGroup;
+			children = (
+				65433C6D16B03C5A00AD9727 /* ADVASN1.h */,
+				65433C6E16B03C5A00AD9727 /* ADVASN1.m */,
+				65433C6F16B03C5A00AD9727 /* ADVNSData+Base64.h */,
+				65433C7016B03C5A00AD9727 /* ADVNSData+Base64.m */,
+				65B56F9616C3C4790007BD67 /* ADVNSDataExtension.h */,
+				65B56F9716C3C4790007BD67 /* ADVNSDataExtension.m */,
+				65433C7116B03C5A00AD9727 /* ADVNSFileHandleExtension.h */,
+				65433C7216B03C5A00AD9727 /* ADVNSFileHandleExtension.m */,
+				65433C7316B03C5A00AD9727 /* ADVOid.h */,
+				65433C7416B03C5A00AD9727 /* ADVOid.m */,
+				65433C7516B03C5A00AD9727 /* ADVX500DistinguishedName.h */,
+				65433C7616B03C5A00AD9727 /* ADVX500DistinguishedName.m */,
+				65433C7716B03C5A00AD9727 /* ADVX509Certificate.h */,
+				65433C7816B03C5A00AD9727 /* ADVX509Certificate.m */,
+				653E497416A5902C0076B5BA /* ADVUrlProtocol.h */,
+				653E497516A5902C0076B5BA /* ADVUrlProtocol.m */,
+				653E495116A58DB10076B5BA /* ADVCertificator.h */,
+				653E495316A58DB10076B5BA /* ADVCertificator.m */,
+				655E4D0616A6FFA100A001CB /* ADVCertUtil.h */,
+				655E4D0716A6FFA100A001CB /* ADVCertUtil.m */,
+				65F588E216EF2AC00029859C /* ADVLog.h */,
+				653E494F16A58DB10076B5BA /* Supporting Files */,
+			);
+			name = ADVcertificator;
+			path = ADVCertificator;
+			sourceTree = "<group>";
+		};
+		653E494F16A58DB10076B5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				653E495016A58DB10076B5BA /* ADVcertificator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		653E496316A58DB10076B5BA /* ADVcertificatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				653E496416A58DB10076B5BA /* Supporting Files */,
+				653E496916A58DB10076B5BA /* ADVCertificatorTests.h */,
+				653E496A16A58DB10076B5BA /* ADVCertificatorTests.m */,
+				65947E9816B8189E008E0D6E /* ADVASN1Tests.h */,
+				65947E9916B8189E008E0D6E /* ADVASN1Tests.m */,
+			);
+			name = ADVcertificatorTests;
+			path = ADVCertificatorTests;
+			sourceTree = "<group>";
+		};
+		653E496416A58DB10076B5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				653E496516A58DB10076B5BA /* ADVcertificatorTests-Info.plist */,
+				653E496616A58DB10076B5BA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65433C8F16B0442E00AD9727 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65433C9016B0442E00AD9727 /* AppKit.framework */,
+				65433C9116B0442E00AD9727 /* CoreData.framework */,
+				65433C9216B0442E00AD9727 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BE2783331741324D0013C83D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE278334174132870013C83D /* ADVCertificator.h in Headers */,
+				BE14EBBF1741357D00A0AB7C /* ADVX509Certificate.h in Headers */,
+				BE14EBC0174135BA00A0AB7C /* ADVOid.h in Headers */,
+				BE14EBC117413C8E00A0AB7C /* ADVX500DistinguishedName.h in Headers */,
+				BE14EBC217413CA900A0AB7C /* ADVASN1.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		653E494816A58DB10076B5BA /* ADVcertificator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653E496E16A58DB10076B5BA /* Build configuration list for PBXNativeTarget "ADVcertificator" */;
+			buildPhases = (
+				653E494516A58DB10076B5BA /* Sources */,
+				653E494616A58DB10076B5BA /* Frameworks */,
+				BE2783331741324D0013C83D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADVcertificator;
+			productName = ADVCertLib;
+			productReference = 653E494916A58DB10076B5BA /* libADVcertificator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		653E495916A58DB10076B5BA /* ADVcertificatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653E497116A58DB10076B5BA /* Build configuration list for PBXNativeTarget "ADVcertificatorTests" */;
+			buildPhases = (
+				653E495516A58DB10076B5BA /* Sources */,
+				653E495616A58DB10076B5BA /* Frameworks */,
+				653E495716A58DB10076B5BA /* Resources */,
+				653E495816A58DB10076B5BA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653E496116A58DB10076B5BA /* PBXTargetDependency */,
+			);
+			name = ADVcertificatorTests;
+			productName = ADVCertLibTests;
+			productReference = 653E495A16A58DB10076B5BA /* ADVcertificatorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		653E494016A58DB10076B5BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ADVTOOLS;
+			};
+			buildConfigurationList = 653E494316A58DB10076B5BA /* Build configuration list for PBXProject "ADVcertificator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 653E493E16A58DB10076B5BA;
+			productRefGroup = 653E494A16A58DB10076B5BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				653E494816A58DB10076B5BA /* ADVcertificator */,
+				653E495916A58DB10076B5BA /* ADVcertificatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		653E495716A58DB10076B5BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653E496816A58DB10076B5BA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		653E495816A58DB10076B5BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		653E494516A58DB10076B5BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653E495416A58DB10076B5BA /* ADVCertificator.m in Sources */,
+				65433C7916B03C5A00AD9727 /* ADVASN1.m in Sources */,
+				655E4D0816A6FFA100A001CB /* ADVCertUtil.m in Sources */,
+				65B56F9816C3C4790007BD67 /* ADVNSDataExtension.m in Sources */,
+				65433C7A16B03C5A00AD9727 /* ADVNSData+Base64.m in Sources */,
+				65433C7B16B03C5A00AD9727 /* ADVNSFileHandleExtension.m in Sources */,
+				65433C7C16B03C5A00AD9727 /* ADVOid.m in Sources */,
+				653E498316A598D70076B5BA /* ADVUrlProtocol.m in Sources */,
+				65433C7D16B03C5A00AD9727 /* ADVX500DistinguishedName.m in Sources */,
+				65433C7E16B03C5A00AD9727 /* ADVX509Certificate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653E495516A58DB10076B5BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653E496B16A58DB10076B5BA /* ADVCertificatorTests.m in Sources */,
+				653E497616A5902C0076B5BA /* ADVUrlProtocol.m in Sources */,
+				65947E9A16B8189E008E0D6E /* ADVASN1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		653E496116A58DB10076B5BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 653E494816A58DB10076B5BA /* ADVcertificator */;
+			targetProxy = 653E496016A58DB10076B5BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		653E496616A58DB10076B5BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				653E496716A58DB10076B5BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		653E496C16A58DB10076B5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PUBLIC_HEADERS_FOLDER_PATH = ADVcertificator;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		653E496D16A58DB10076B5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PUBLIC_HEADERS_FOLDER_PATH = ADVcertificator;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		653E496F16A58DB10076B5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ADVCertificator.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADVCertificator/ADVcertificator-Prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ADVcertificator;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		653E497016A58DB10076B5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ADVCertificator.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADVCertificator/ADVcertificator-Prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ADVcertificator;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		653E497216A58DB10076B5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADVCertificator/ADVCertificator-Prefix.pch";
+				INFOPLIST_FILE = "ADVCertificatorTests/ADVcertificatorTests-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ADVcertificatorTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		653E497316A58DB10076B5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADVCertificator/ADVCertificator-Prefix.pch";
+				INFOPLIST_FILE = "ADVCertificatorTests/ADVcertificatorTests-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ADVcertificatorTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		653E494316A58DB10076B5BA /* Build configuration list for PBXProject "ADVcertificator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653E496C16A58DB10076B5BA /* Debug */,
+				653E496D16A58DB10076B5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653E496E16A58DB10076B5BA /* Build configuration list for PBXNativeTarget "ADVcertificator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653E496F16A58DB10076B5BA /* Debug */,
+				653E497016A58DB10076B5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653E497116A58DB10076B5BA /* Build configuration list for PBXNativeTarget "ADVcertificatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653E497216A58DB10076B5BA /* Debug */,
+				653E497316A58DB10076B5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 653E494016A58DB10076B5BA /* Project object */;
+}
