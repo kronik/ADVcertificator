@@ -28,7 +28,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ADVCertificator *advCertificator = [ADVCertificator instance];
+    ADVCertificator *advCertificator = [ADVCertificator sharedCertificator];
     
     [advCertificator registerHandler];
     

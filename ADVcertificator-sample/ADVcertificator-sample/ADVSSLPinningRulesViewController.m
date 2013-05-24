@@ -57,7 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    ADVCertificator *certLib = [ADVCertificator instance];
+    ADVCertificator *certLib = [ADVCertificator sharedCertificator];
     
     return [certLib serverCertificateVerificationItems].count;
 }
@@ -73,7 +73,7 @@
     // Configure the cell...
     NSUInteger row = indexPath.row;
     
-    ADVServerCertificateVerificationItem *item = [[ADVCertificator instance].serverCertificateVerificationItems objectAtIndex:row];
+    ADVServerCertificateVerificationItem *item = [[ADVCertificator sharedCertificator].serverCertificateVerificationItems objectAtIndex:row];
     
     NSString *component;
     switch (item.certificateComponent)

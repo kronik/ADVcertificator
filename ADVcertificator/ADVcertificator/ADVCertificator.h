@@ -138,8 +138,13 @@ typedef enum {
 
 /// @name Getting the ADVCertificator instance
 ///
+/// Return the single shared instance of the ADVCertificator class. Depreciated, use sharedCertificator instead.
++(ADVCertificator *)instance __attribute__((deprecated));
+
+/// @name Getting the ADVCertificator instance
+///
 /// Return the single shared instance of the ADVCertificator class.
-+(ADVCertificator *)instance;
++(ADVCertificator *)sharedCertificator;
 
 /// @name Setting and getting the delegate
 

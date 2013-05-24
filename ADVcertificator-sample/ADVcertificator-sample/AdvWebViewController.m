@@ -61,7 +61,7 @@
     
     NSString *webConnectUrl = self.urlTextField.text;
     
-    [ADVCertificator instance].delegate = self;
+    [ADVCertificator sharedCertificator].delegate = self;
     self.serverCertificateData = nil;
     [self updateServerCertificateButton];
    

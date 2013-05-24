@@ -72,6 +72,11 @@ static ADVCertificator *sharedInstance_ = nil;
 
 +(ADVCertificator *)instance
 {
+    return [ADVCertificator sharedCertificator];
+}
+
++(ADVCertificator *)sharedCertificator
+{
     if (sharedInstance_ == nil)
     {
         sharedInstance_ = [[super allocWithZone:NULL] init];

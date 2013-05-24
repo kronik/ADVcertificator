@@ -71,7 +71,7 @@ static NSString *ADVProtocolInnerRequestKey = @"ADVInnerRequest";
         if ([ADVUrlProtocol propertyForKey:ADVProtocolInnerRequestKey inRequest:request] == nil)
         {
             BOOL result = YES;
-            id<ADVCertificatorDelegate> delegate = [ADVCertificator instance].delegate;
+            id<ADVCertificatorDelegate> delegate = [ADVCertificator sharedCertificator].delegate;
             if ([delegate respondsToSelector:@selector(canHandleRequest:)])
             {
                 result = [delegate canHandleRequest:request];
@@ -118,7 +118,7 @@ static NSString *ADVProtocolInnerRequestKey = @"ADVInnerRequest";
     if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodClientCertificate])
     {
         NSURLCredential *urlCredential;
-        id<ADVCertificatorDelegate> delegate = [ADVCertificator instance].delegate;
+        id<ADVCertificatorDelegate> delegate = [ADVCertificator sharedCertificator].delegate;
         if ([delegate respondsToSelector:@selector(connection:requestClientCertificate:)])
         {
             urlCredential = [delegate connection:connection requestClientCertificate:challenge];
@@ -133,7 +133,7 @@ static NSString *ADVProtocolInnerRequestKey = @"ADVInnerRequest";
     {
         ADVServerCertificateResponse response;
         
-        id<ADVCertificatorDelegate> delegate = [ADVCertificator instance].delegate;
+        id<ADVCertificatorDelegate> delegate = [ADVCertificator sharedCertificator].delegate;
         if ([delegate respondsToSelector:@selector(connection:verifyServerCertificate:)])
         {
             response = [delegate connection:connection verifyServerCertificate:challenge];
@@ -164,7 +164,7 @@ static NSString *ADVProtocolInnerRequestKey = @"ADVInnerRequest";
     else if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodDefault] ||
              [challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodHTTPBasic])
     {
-        id<ADVCertificatorDelegate> delegate = [ADVCertificator instance].delegate;
+        id<ADVCertificatorDelegate> delegate = [ADVCertificator sharedCertificator].delegate;
         if ([delegate respondsToSelector:@selector(connection:requestUserPassword:)])
         {
             NSURLCredential *urlCredential;

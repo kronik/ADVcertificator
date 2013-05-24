@@ -47,15 +47,15 @@
         }
     }
     
-    NSString *name = [ADVCertificator instance].clientCertificateName;
-    NSURLCredential *urlCredential = [[ADVCertificator instance] loadCertificateFromKeychain:name];
+    NSString *name = [ADVCertificator sharedCertificator].clientCertificateName;
+    NSURLCredential *urlCredential = [[ADVCertificator sharedCertificator] loadCertificateFromKeychain:name];
 
     return urlCredential;
 }
 
 +(ADVServerCertificateResponse)evaluateServerCertificate:(NSURLAuthenticationChallenge *)challenge
 {
-    ADVServerCertificateVerificationOptions options = [ADVCertificator instance].serverCertificateVerificationOptions;
+    ADVServerCertificateVerificationOptions options = [ADVCertificator sharedCertificator].serverCertificateVerificationOptions;
     if (options == ADVServerCertificateVerificationDefault)
         return ADVServerCertificateResponseDefault;
     
@@ -86,7 +86,7 @@
 
     if (trustCertificate)
     {
-        NSArray *verificationItems = [ADVCertificator instance].serverCertificateVerificationItems;
+        NSArray *verificationItems = [ADVCertificator sharedCertificator].serverCertificateVerificationItems;
         if ((options & ADVServerCertificateVerificationUseItemList) != 0 && verificationItems && verificationItems.count != 0)
         {
             trustCertificate = NO;

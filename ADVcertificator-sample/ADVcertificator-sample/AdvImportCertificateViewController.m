@@ -67,9 +67,9 @@
 
     // Import the client certificate and store it in the keychain
     // It will then be automatically be used (when needed) because we have called "clientCertificateName" in AdvAppDelegate.m
-    status = [[ADVCertificator instance] importCertificateToKeychain:pkcs12url
-                                                             withPassword:self.passwordTextField.text
-                                                                     name:@"ADVcertificator"]; // This name (label) is the same than in AdvAppDelegate.m
+    status = [[ADVCertificator sharedCertificator] importCertificateToKeychain:pkcs12url
+                                                                  withPassword:self.passwordTextField.text
+                                                                          name:@"ADVcertificator"]; // This name (label) is the same than in AdvAppDelegate.m
     switch (status)
     {
         case ADVCertificateImportStatusSucceeded:
