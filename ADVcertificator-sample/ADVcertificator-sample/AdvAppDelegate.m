@@ -36,22 +36,22 @@
     
     // These are the rules for SSL Server Certificate pinning (change these rules and the values to fit your needs):
     // - The fingerprint has to be b41a2c496b07650ba72618681bceee0eb9f23726
-    // - The subject public key info has to be 237f501878aff6e281bb2d7edf4a9d40686d52a6 OR the suject has to be CN=*.advtools.info, etc.
+    // - The subject public key info has to be 237f501878aff6e281bb2d7edf4a9d40686d52a6 OR the suject has to be CN=secure.advtools.com, etc.
     
-    // Fingerprint (in this example, it is *.advtools.info certificate). This item is mandatory in this example.
+    // Fingerprint (in this example, it is secure.advtools.com certificate). This item is mandatory in this example.
     [advCertificator addServerCertificateVerificationItem:[ADVServerCertificateVerificationItem
                                                            serverCertificateVerificationItem:ADVServerCertificateVerificationFingerprint
-                                                           stringToMatch:@"c119b6d25540a01dda1fba093eef000f22e1561f" maxDepth:2 isItemRequired:YES]];
+                                                           stringToMatch:@"01be970fd0064f228556186b3d4d2fe2ce6040cf" maxDepth:2 isItemRequired:YES]];
     
-    // Public Key (in this example, it is *.advtools.info certificate). This item is optional in this example.
+    // Public Key (in this example, it is secure.advtools.com certificate). This item is optional in this example.
     [advCertificator addServerCertificateVerificationItem:[ADVServerCertificateVerificationItem
                                                    serverCertificateVerificationItem:ADVServerCertificateVerificationSubjectPublicKeyInfo
                                                    stringToMatch:@"0022df9c489217c4c4636a1edd407b22ab398628" maxDepth:1 isItemRequired:NO]];
     
-    // Subject name (in this example, it is *.advtools.info certificate). This item is optional in this example.
+    // Subject name (in this example, it is secure.advtools.com certificate). This item is optional in this example.
     [advCertificator addServerCertificateVerificationItem:[ADVServerCertificateVerificationItem
                                                    serverCertificateVerificationItem:ADVServerCertificateVerificationSubject
-                                                   stringToMatch:@"SerialNumber=sKa1wNMOXJp2T-HxXrihfBtrxdTsj8LP, OU=GT78791725, OU=See www.rapidssl.com/resources/cps (c)12, OU=Domain Control Validated - RapidSSL(R), CN=*.advtools.info" maxDepth:0 isItemRequired:NO]];
+                                                   stringToMatch:@"serialNumber=DoO0Yi1mc3LRv5/6udowa0-vwXY3GH75, OU=GT10607012, OU=See www.rapidssl.com/resources/cps (c)14, OU=Domain Control Validated - RapidSSL(R), CN=secure.advtools.com" maxDepth:0 isItemRequired:NO]];
     
     // This is the name (label) of the client certificate that will be used in the remaining of the application, when needed
     // It has to be imported before ("Import Client Certificate" button)
